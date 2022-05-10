@@ -608,6 +608,11 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 20px;
 	}
 
+	.meeting__video iframe{
+		height: 400px;
+		width: 700px;
+	}
+	
 	.help__block{
 		width: 460px;
 	}
@@ -776,6 +781,11 @@ h1, h2, h3, h4, h5, h6 {
 		width: 67%;
 		margin-bottom: 40px;
 	}
+	
+	.meeting__video iframe{
+		height: 300px;
+		width: 500px;
+	}
 
 	.help__block{
 		width: 350px;
@@ -925,5 +935,12 @@ h1, h2, h3, h4, h5, h6 {
 
 	.footer__block{
 		font-size: 10px;
+	}
+}
+
+@media (max-width: 400px){
+	.meeting__video iframe{
+		height: 200px;
+		width: 320px;
 	}
 }
