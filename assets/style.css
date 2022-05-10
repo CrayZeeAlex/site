@@ -308,13 +308,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .creators__photo{
+	position: relative;
 	margin-top: 20px;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(45deg,rgb(255, 203, 31), rgb(0, 0, 255));
 }
 
 .creators__img{
 	border-radius: 50%;
 	border: 10px solid rgb(27, 27, 70);
 	width: 200px;
+	transition: opacity .1s linear;
 }
 
 .creators__desc{
@@ -325,12 +331,60 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 30px;
 	font-weight: 700;
 	margin-bottom: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	color: rgb(27, 27, 70);
+}
+
+.creators__name:hover{
+	color: rgb(165, 140, 0);
+	transition: color .1s linear;
 }
 
 .creators__text{
 	font-size: 24px;
 	font-weight: 300;
 	padding: 0 20px;
+}
+
+.creators__photo:hover .creators__img{
+	opacity: 0.2;
+}
+
+.creators__link{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate3d(0, -50%, 0);
+	text-align: center;
+}
+
+.social__item{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	background-color: rgb(27, 27, 70);
+	text-decoration: none;
+	font-size: 28px;
+	opacity: 0;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.social__item:hover{
+	background: rgb(255, 203, 31);
+	color: rgb(27, 27, 70);
+}
+
+.creators__photo:hover .social__item{
+	opacity: 1;
+	transition: opacity .1s linear;
 }
 
 .meeting__video{
